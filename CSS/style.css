@@ -1,0 +1,442 @@
+/* LLAMO A LA TIPOGRAFIA QUE VOY A UTLIZAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* RESETEO */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+header .descuentoHeader{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: .8125rem;
+}
+header .barra{
+    display: flex;
+    background-color:  #f5f5f5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.125rem;
+    border-bottom: .0313rem rgba(0, 0, 0, 0.446) solid;
+}
+header .barra .logo{
+    width: 7.5rem;
+    height: 3.625rem;
+}
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header .barra nav ul{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: right;
+    font-weight: 300;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+header .barra .iconosNavBar{
+    display: flex;
+    gap: 1.25rem;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+header .barra .iconosNavBar li{
+    width: 1.0931rem;
+    height: 1.0931rem;
+}
+
+/* CUERPO */
+
+main .imagPrincipalesIndex img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.imagPrincipalesIndex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 43.75rem 30.125rem;
+    grid-template-areas: 
+    "imgP0 imgP0 imgP0"
+    "imgP1 imgP2 imgP3";
+    gap: .1875rem;
+}
+.img0{
+    grid-area: imgP0;
+}
+.img1{
+    grid-area: imgP1;
+}
+.img2{
+    grid-area: imgP2;
+}
+.img3{
+    grid-area: imgP3;
+}
+.img0 img{
+    object-position: 50% 40%;
+}
+.img2 img{
+    object-position: 50% 38%;
+}
+
+/* PRODUCTO INDEX */
+
+main .loMasVendido{
+    width: 100%;
+    text-align: center;
+    margin: 4.375rem 0;
+}
+main .loMasVendido h2{
+    font-size: 1.25rem;
+}
+main .loMasVendido .productosIndex{
+    display: flex;
+    justify-content: center;
+    padding: 3.125rem 0 ;
+    gap: .625rem;
+}
+.card{
+    width: 400px;
+    height: 34.375rem; 
+    text-align: center;
+}
+.card .producto{
+    width: 100%;
+    height: 28.125rem;
+    position: relative;
+    z-index: 1;
+}
+.card .producto img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.card .producto span{
+    position: absolute;
+    top: .625rem;
+    left: .625rem;
+    color: black;
+    border: 1px black solid;
+    border-radius: .5rem;
+    padding: .0625rem .5rem;
+}
+.caracteristicasProducto{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.card .nombreProducto{
+    font-size: .8125rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.descuentoPrecio{
+    color: red;
+    font-size: .875rem;
+}
+.precioProducto{
+    font-size: .875rem;
+}
+.loMasVendido .verMas{
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: .3125rem;
+}
+.saleIndex{
+    width: 100%;
+    height: 25.875rem;
+    border: 1px black solid;
+    background-color: black;
+}
+.saleIndex img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+}
+/* PIE DE PAGINA */
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 3.9375rem 5.5rem;
+    font-size: .75rem;
+}
+footer img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.iconoFooter{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+footer p{
+    font-weight: 600;
+}
+footer .footerCompraSegura{
+    width: 12.5rem;
+}
+footer li{
+    display: flex;
+    align-items: center;
+    gap: .3125rem;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+}
+footer .iconosFollow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+}
+footer .spanAyuda{
+    padding-left: 1.875rem;
+    color: rgba(174, 174, 174, 0.795);
+}
+
+/* PAGINA HOMBRES */
+
+main .imagenPrincipalHombre{
+    width: 100%;
+    height: 749px;
+}
+main .imagenPrincipalHombre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+main .productosPrincipalesHM{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4 , auto);
+    grid-template-areas:
+    "producto1 producto2 producto3 producto4"
+    "producto5 producto6 producto7 producto8"
+    "producto9 producto10 producto11 producto12"
+    "verColeccion verColeccion verColeccion verColeccion";
+    gap: 5rem .9375rem ;
+    margin: 6.25rem 0px;
+    justify-content: center;
+}
+.productoPrincipalHM-1{
+    grid-area: producto1;
+}
+.productoPrincipalHM-2{
+    grid-area: producto2;
+}
+.productoPrincipalHM-3{
+    grid-area: producto3;
+}
+.productoPrincipalHM-4{
+    grid-area: producto4;
+}
+.productoPrincipalHombre-5{
+    grid-area: producto5;
+}
+.productoPrincipalHM-6{
+    grid-area: producto6;
+}
+.productoPrincipalHM-7{
+    grid-area: producto7;
+}
+.productoPrincipalHM-8{
+    grid-area: producto8;
+}
+.productoPrincipalHM-9{
+    grid-area: producto9;
+}
+.productoPrincipalHM-10{
+    grid-area: producto10;
+}
+.productoPrincipalHM-11{
+    grid-area: producto11;
+}
+.productoPrincipalHM-12{
+    grid-area: producto12;
+}
+.verMasHM{
+    grid-area: verColeccion;
+    align-items: center;
+    width: conte;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: .3125rem;
+    justify-self: center;
+}
+
+/* Filtro */
+
+.filtro{
+    height: 4.0625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1.875rem;
+    border: .0625rem solid black;
+}
+.filtro .arrowFiltro{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.filtro .arrowFiltro img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.filtro div{
+    display: flex;
+    gap: .1875rem;
+}
+
+/* PAGINA MUJERES */
+
+main .imagenPrincipalMujeres{
+    width: 100%;
+    height: 749px;
+}
+main .imagenPrincipalMujeres img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+/* PAGINA REGISTER */
+
+main .crearCuenta{
+    height: 68.75rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0px;
+}
+main .crearCuenta h3{
+    border-bottom: .0625rem solid black;
+    width: 523.8px;
+    text-align: center;
+    padding-bottom: .625rem;
+}
+main .crearCuenta form{
+    padding-top: 2.8125rem;
+}
+main .crearCuenta form .completar{
+    display: flex;
+    flex-direction: column;
+    gap: 2.8125rem 0px;
+    padding: 2.8125rem 0;
+}
+main .crearCuenta form .completar legend, main .crearCuenta h3{
+    font-weight: 600;
+}
+main .crearCuenta form .submitFormulario{
+    display: flex;
+    justify-content: center;
+}
+main .crearCuenta form .submitFormulario input{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    padding: .3125rem 0px;
+}
+main .crearCuenta form fieldset .seccionesFormulario{
+    display: flex;
+    flex-direction: column;
+    border-bottom: .0625rem solid black;
+}
+main .crearCuenta form fieldset .seccionesFormulario input{
+    padding-top: 1.9063rem;
+}
+.completar div label a{
+    text-decoration: underline;
+}
+
+/* RESETEO DEL FORMULARIO */
+
+form, input, textarea, select, button, fieldset, legend {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+/* PAGINA NOSOTROS */
+
+main .presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1875rem;
+    padding: 2.5rem;
+}
+main .presentacion .video{
+    width: 67.5rem;
+    height: 37.5rem;
+}
+main .presentacion .video iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+main .ideasVision{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+main .ideasVision .idea, .vision{
+    width: 15.25rem;
+    height: 10.375rem;
+}
+main .ideasVision .imagenNosotros{
+    width: 17.5rem;
+    height: 10.375rem;
+}
+main .ideasVision .imagenNosotros img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
