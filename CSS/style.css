@@ -108,8 +108,7 @@ main .imagPrincipalesIndex img{
 main .loMasVendido{
     width: 100%;
     text-align: center;
-    margin: 4.375rem 0;
-    padding: 0 .3125rem;
+    margin: 4.375rem .625rem;
 }
 main .loMasVendido h2{
     font-size: 1.25rem;
@@ -253,8 +252,7 @@ main .productosPrincipalesHM{
     "producto9 producto10 producto11 producto12"
     "verColeccion verColeccion verColeccion verColeccion";
     gap: 5rem .9375rem ;
-    margin: 6.25rem 0;
-    padding: 0 .3125rem;
+    margin: 6.25rem .3125rem;
     justify-content: center;
 }
 .productoPrincipalHM-1{
