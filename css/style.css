@@ -215,7 +215,7 @@ main .productosPrincipalesHM {
 
 main .imagenPrincipalHombre {
   width: 100%;
-  height: 749px; }
+  height: 750px; }
 
 main .imagenPrincipalHombre img {
   object-fit: cover;
@@ -490,6 +490,16 @@ main .crearCuenta {
     .card .producto {
       height: 15.625rem; } }
 
+@media (max-width: 745px) {
+  main .imagenPrincipalHombre {
+    width: 100%;
+    height: 500px; } }
+
+@media (max-width: 745px) {
+  main .imagenPrincipalMujeres {
+    width: 100%;
+    height: 500px; } }
+
 @media (max-width: 376px) {
   header .descuentoHeader {
     font-size: .625rem; }
@@ -550,3 +560,44 @@ main .crearCuenta {
     width: 18.75rem; }
     .crearCuenta form h3 {
       width: 18.75rem; } }
+
+@media (max-width: 376px) {
+  main .productosPrincipalesHM {
+    display: grid;
+    grid-template-columns: repeat(2, 0.7fr);
+    grid-template-rows: repeat(8, auto);
+    justify-content: center;
+    align-content: none;
+    gap: 1.25rem 0.9375rem;
+    grid-template-areas: "producto1 producto2"  "producto3 producto4" "producto5 producto6"  "producto7 producto8" "producto9 producto10"  "producto11 producto12" "verColeccion verColeccion";
+    margin: 3.125rem .3125rem; }
+    main .productosPrincipalesHM .productoPrincipalHM-1 {
+      grid-area: producto1; }
+    main .productosPrincipalesHM .productoPrincipalHM-2 {
+      grid-area: producto2; }
+    main .productosPrincipalesHM .productoPrincipalHM-3 {
+      grid-area: producto3; }
+    main .productosPrincipalesHM .productoPrincipalHM-4 {
+      grid-area: producto4; }
+    main .productosPrincipalesHM .productoPrincipalHombre-5 {
+      grid-area: producto5; }
+    main .productosPrincipalesHM .productoPrincipalHM-6 {
+      grid-area: producto6; }
+    main .productosPrincipalesHM .productoPrincipalHM-7 {
+      grid-area: producto7; }
+    main .productosPrincipalesHM .productoPrincipalHM-8 {
+      grid-area: producto8; }
+    main .productosPrincipalesHM .productoPrincipalHM-9 {
+      grid-area: producto9; }
+    main .productosPrincipalesHM .productoPrincipalHM-10 {
+      grid-area: producto10; }
+    main .productosPrincipalesHM .productoPrincipalHM-11 {
+      grid-area: producto11; }
+    main .productosPrincipalesHM .productoPrincipalHM-12 {
+      grid-area: producto12; }
+  .filtro p {
+    display: none; }
+  .card {
+    height: auto; }
+    .card p {
+      font-size: 0.75rem; } }
