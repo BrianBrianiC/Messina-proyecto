@@ -503,8 +503,11 @@ main .crearCuenta {
 @media (max-width: 376px) {
   header .descuentoHeader {
     font-size: .625rem; }
-  header .navBar nav {
-    display: none; } }
+  header .navBar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.25rem;
+    gap: 1.25rem; } }
 
 @media (max-width: 376px) {
   footer {
@@ -601,3 +604,12 @@ main .crearCuenta {
     height: auto; }
     .card p {
       font-size: 0.75rem; } }
+
+@media (max-width: 376px) {
+  .presentacion {
+    padding: 1.875rem 0; }
+    .presentacion .video {
+      width: 90%;
+      height: 19.21875rem; }
+  .ideasVision {
+    flex-direction: column; } }
